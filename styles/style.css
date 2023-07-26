@@ -21,6 +21,7 @@ h2 {
 p {
   font-family: "Roboto", sans-serif;
   color: #ffffff;
+  font-size: 1.5rem;
 }
 
 /* Estilização do cabeçalho da página. */
@@ -133,9 +134,41 @@ main {
   flex-direction: column;
 }
 
-.segundaSessaoMain h2,
-p {
+.caixaSegundaSessao {
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  justify-content: center;
+  width: 50vw;
+  height: 100vw;
+}
+
+.caixaSegundaSessao h2,
+.caixaSegundaSessao p {
   color: #3a342f;
+  margin: 1rem 2rem;
+}
+
+.caixaSegundaSessao button {
+  width: 15rem;
+  height: 5rem;
+  margin: 1rem 2rem;
+  font-size: 1.5rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  background-color: #3a342f;
+  border-radius: 60px;
+  border: none;
+  color: #ffffff;
+  box-shadow: #3a342f 0px 0px 2px 1px;
+  transition: 0.2s;
+}
+
+.caixaSegundaSessao button:hover {
+  scale: 1.1;
+  transition: 0.2s;
+  cursor: pointer;
+  background-color: #313131;
 }
 
 .terceiraSessaoMain {
@@ -143,6 +176,49 @@ p {
   background-size: 100% 100%;
   width: 100vw;
   height: 100vh;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.caixaTerceiraSessao {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  width: 50vw;
+  height: 100vw;
+}
+
+.caixaTerceiraSessao h2,
+.caixaTerceiraSessao p {
+  color: #ffffff;
+  margin: 1rem 2rem;
+}
+
+.caixaTerceiraSessao button {
+  width: 15rem;
+  height: 5rem;
+  margin: 1rem 2rem;
+  font-size: 1.5rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  background-color: #ffffff;
+  border-radius: 60px;
+  border: none;
+  color: #000000;
+  box-shadow: #ffffff 0px 0px 2px 1px;
+  transition: 0.2s;
+}
+
+.caixaTerceiraSessao button:hover {
+  scale: 1.1;
+  transition: 0.2s;
+  cursor: pointer;
+  background-color: #121212;
+  color: #ffffff;
+  box-shadow: none;
 }
 
 .quartaSessaoMain {
@@ -154,8 +230,19 @@ p {
 }
 
 .quartaSessaoMain p,
-h3 {
+.quartaSessaoMain h3 {
   color: #fd6a9a;
+  font-size: 2rem;
+}
+
+.quartaSessaoMain .americanas {
+  font-weight: 700;
+}
+
+.quartaSessaoMain .havaianas {
+  color: #fd6a9a;
+  font-size: 2rem;
+  font-weight: 900;
 }
 
 /* Estilização do rodapé */
