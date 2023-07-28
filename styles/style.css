@@ -229,13 +229,15 @@ main {
   justify-content: space-evenly;
 }
 
-.quartaSessaoMain p,
-.quartaSessaoMain h3 {
+.quartaSessaoMain .apoio {
   color: #fd6a9a;
   font-size: 2rem;
+  font-style: italic;
 }
 
 .quartaSessaoMain .americanas {
+  color: #fd6a9a;
+  font-size: 2rem;
   font-weight: 700;
 }
 
