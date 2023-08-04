@@ -90,7 +90,7 @@ body {
   width: 100vw;
   height: 100vh;
   overflow-x: hidden;
-  transition: 20ms;
+  transition: all 20ms;
 }
 
 main {
@@ -273,17 +273,21 @@ main {
   padding: 6rem 1rem;
 }
 
-.rodape section {
-  padding: 1rem;
-  margin: 0 4rem;
+.caixaPrimaria,
+.sectionNavMenuIcones {
+  display: none;
 }
 
-.navRodape ul {
-  list-style: none;
+.caixaLista {
+  width: 100vw;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
-.navRodape ul li {
+.caixaLista ul li {
   padding: 0.5rem 0;
+  list-style: none;
 }
 
 .rodape h3 {
@@ -291,7 +295,15 @@ main {
   color: #ffffff;
 }
 
-@media (min-width: 769px) and (max-width: 1024px) {
+.tituloELogoRodape,
+.logoRodape,
+.tituloRodape,
+.sectionNavMenuIcones {
+  display: none;
+}
+
+/* Adaptação do site para dispotivos móveis */
+@media screen and (min-width: 901px) and (max-width: 1024px) {
   h1,
   h2 {
     font-size: 2rem;
@@ -315,146 +327,99 @@ main {
     padding: 0 0.5rem;
   }
 
+  .rodape {
+    display: flex;
+  }
+
   .rodape section {
     padding: 0.5rem;
     margin: 0 1rem;
   }
 }
 
-@media (min-width: 481px) and (max-width: 768px) {
-  h1,
-  h2 {
-    font-size: 1.8rem;
-    font-family: "Roboto Serif", serif;
-    font-weight: 700;
-  }
+@media screen and (min-width: 769px) and (max-width: 900px) {
+}
 
-  .primeiraSessaoMain,
-  .segundaSessaoMain,
-  .terceiraSessaoMain {
-    height: 80vh;
-  }
-
-  .rodape {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 0;
-    margin: 0;
-  }
-
-  .rodape section {
-    margin: 0;
-    padding: 0;
-  }
+@media screen and (min-width: 481px) and (max-width: 900px) {
 }
 
 @media screen and (min-width: 320px) and (max-width: 480px) {
-  h1,
-  h2 {
-    font-size: 1.6rem;
-    font-family: "Roboto Serif", serif;
-    font-weight: 700;
-  }
-
+  /* Cabeçalho */
   .cabecalho {
-    position: fixed;
-    width: 100vw;
-    z-index: 3;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 0;
   }
 
   .cabecalho .navMenu {
     display: none;
   }
 
+  /* Conteúdo principal */
   .primeiraSessaoMain {
-    background: url(/images/cachorroChapeuMobile.png) no-repeat;
+    background: url("/images/cachorroChapeuMobile.png") no-repeat;
     background-size: 100% 100%;
+    background-color: #fd6a9a;
     width: 100vw;
-    height: 100vh;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
+    position: relative;
   }
 
-  .caixaPrimeiraSessao {
+  .primeiraSessaoMain .caixaPrimeiraSessao {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
     position: absolute;
-    top: 16vh;
+    top: 10vh;
   }
 
   .segundaSessaoMain {
-    background: url(/images/cachorroDeToucaMobile.png) no-repeat;
+    background: url("/images/cachorroDeToucaMobile.png") no-repeat;
     background-size: 100% 100%;
+    background-color: #f4f2f3;
     width: 100vw;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-  }
-
-  .caixaSegundaSessao,
-  .caixaTerceiraSessao {
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
-    width: 100vw;
   }
 
   .terceiraSessaoMain {
-    background: url(/images/cachorroSentadoMobile.png) no-repeat;
+    background: url("/images/cachorroSentadoMobile.png") no-repeat;
     background-size: 100% 100%;
+    background-color: #fd6a9a;
     width: 100vw;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-  }
-
-  .quartaSessaoMain {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100vw;
-    height: 24vh;
-    flex-direction: column;
-  }
-
-  .quartaSessaoMain p,
-  .quartaSessaoMain h3 {
-    font-size: 2px;
-  }
-
-  .marcasQuartaSessao {
-    display: flex;
-    align-items: flex-end;
-    justify-content: space-evenly;
   }
 
   .rodape {
     display: flex;
+    align-items: center;
+    justify-content: center;
     flex-direction: column;
-    padding: 0;
-    margin: 0;
     width: 100vw;
-    height: 92vh;
-  }
-
-  .rodape section {
-    margin: 2rem 0;
+    font-size: 14px;
+    margin: 0;
     padding: 0;
   }
 
-  .rodape h3 {
-    font-size: 1.2rem;
-    font-weight: 700;
+  .rodape .caixaPrimaria,
+  .rodape .caixaLista,
+  .rodape .sectionNavMenuIcones {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    flex-direction: column;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+  }
+
+  .rodape li {
+    list-style: none;
   }
 }
