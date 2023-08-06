@@ -402,9 +402,7 @@ main {
     justify-content: center;
     flex-direction: column;
     width: 100vw;
-    font-size: 14px;
-    margin: 0;
-    padding: 0;
+    padding: 2rem 0;
   }
 
   .rodape .caixaPrimaria,
@@ -419,7 +417,53 @@ main {
     padding: 0;
   }
 
+  .rodape h3 {
+    font-size: 1.6rem;
+  }
+
+  .rodape p {
+    font-size: 1rem;
+  }
+
   .rodape li {
     list-style: none;
+  }
+
+  .caixaPrimaria {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .caixaPrimaria,
+  .caixaLista {
+    margin: 4rem;
+  }
+
+  .caixaPrimaria .tituloELogoRodape figure img {
+    width: 48px;
+    height: 48px;
+  }
+
+  .tituloELogoRodape {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .caixaPrimaria .sectionNavMenuIcones img {
+    width: 32px;
+    height: 32px;
+  }
+
+  #logoYoutube {
+    width: 38px;
+    height: 38px;
+  }
+
+  .sectionNavMenuIcones ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
