@@ -361,6 +361,7 @@ main {
     background-size: 100% 100%;
     background-color: #fd6a9a;
     width: 100vw;
+    height: 88vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -376,14 +377,35 @@ main {
     top: 10vh;
   }
 
+  .primeiraSessaoMain .caixaPrimeiraSessao h1,
+  .primeiraSessaoMain .caixaPrimeiraSessao h2 {
+    font-size: 2rem;
+  }
+
   .segundaSessaoMain {
     background: url("/src/images/cachorroDeToucaMobile.png") no-repeat;
     background-size: 100% 100%;
     background-color: #f4f2f3;
     width: 100vw;
+    height: 88vh;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: start;
+    flex-direction: column;
+  }
+
+  .segundaSessaoMain .caixaSegundaSessao {
+    width: 100vw;
+    height: 40vh;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    font-size: 1rem;
+  }
+
+  .caixaSegundaSessao h2 {
+    font-size: 2rem;
   }
 
   .terceiraSessaoMain {
@@ -391,17 +413,55 @@ main {
     background-size: 100% 100%;
     background-color: #fd6a9a;
     width: 100vw;
+    height: 88vh;
     display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: column;
+  }
+
+  .terceiraSessaoMain .caixaTerceiraSessao {
+    width: 100vw;
+    height: 40vh;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    font-size: 1rem;
+  }
+  .caixaTerceiraSessao h2 {
+    font-size: 2rem;
+  }
+
+  .quartaSessaoMain {
+    width: 100vw;
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
   }
 
+  .quartaSessaoMain .marcasQuartaSessao {
+    width: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .marcasQuartaSessao .havaianas,
+  .marcasQuartaSessao .americanas {
+    font-size: 1.8rem;
+  }
+
+  /* Estilização do rodapé */
   .rodape {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     width: 100vw;
+    height: 88vh;
     padding: 2rem 0;
   }
 
@@ -412,7 +472,7 @@ main {
     align-items: center;
     justify-items: center;
     flex-direction: column;
-    width: 100vw;
+    width: inherit;
     margin: 0;
     padding: 0;
   }
@@ -430,6 +490,7 @@ main {
   }
 
   .caixaPrimaria {
+    width: inherit;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -446,9 +507,15 @@ main {
   }
 
   .tituloELogoRodape {
+    width: inherit;
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-bottom: 1rem;
+  }
+
+  .caixaPrimaria .sectionNavMenuIcones {
+    margin-bottom: 1rem;
   }
 
   .caixaPrimaria .sectionNavMenuIcones img {
@@ -465,5 +532,33 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+
+  .sectionNavMenuIcones li {
+    margin: 0 0.5rem;
+  }
+
+  .caixaLista {
+    width: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .caixaLista section {
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1.2rem;
+  }
+
+  .caixaLista section ul {
+    width: 50vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
   }
 }
