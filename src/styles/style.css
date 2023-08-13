@@ -102,7 +102,7 @@ main {
 
 /* Estilização da primeira section da tag main */
 .primeiraSessaoMain {
-  background: url("/images/cachorroChapeu.png") no-repeat;
+  background: url("/src/images/cachorroChapeu.png") no-repeat;
   background-size: 100% 100%;
   background-color: #fd6a9a;
   width: 100vw;
@@ -129,7 +129,7 @@ main {
 
 /* Estilização da segunda section da tag main */
 .segundaSessaoMain {
-  background: url("/images/cachorroDeTouca.png") no-repeat;
+  background: url("/src/images/cachorroDeTouca.png") no-repeat;
   background-size: 100% 100%;
   background-color: #f4f2f3;
   width: 100vw;
@@ -179,7 +179,7 @@ main {
 
 /* Estilização da terceira section da tag main */
 .terceiraSessaoMain {
-  background: url("/images/cachorroSentado.png") no-repeat;
+  background: url("/src/images/cachorroSentado.png") no-repeat;
   background-size: 100% 100%;
   width: 100vw;
   height: 120vh;
@@ -357,7 +357,7 @@ main {
 
   /* Conteúdo principal */
   .primeiraSessaoMain {
-    background: url("/images/cachorroChapeuMobile.png") no-repeat;
+    background: url("/src/images/cachorroChapeuMobile.png") no-repeat;
     background-size: 100% 100%;
     background-color: #fd6a9a;
     width: 100vw;
@@ -377,7 +377,7 @@ main {
   }
 
   .segundaSessaoMain {
-    background: url("/images/cachorroDeToucaMobile.png") no-repeat;
+    background: url("/src/images/cachorroDeToucaMobile.png") no-repeat;
     background-size: 100% 100%;
     background-color: #f4f2f3;
     width: 100vw;
@@ -387,7 +387,7 @@ main {
   }
 
   .terceiraSessaoMain {
-    background: url("/images/cachorroSentadoMobile.png") no-repeat;
+    background: url("/src/images/cachorroSentadoMobile.png") no-repeat;
     background-size: 100% 100%;
     background-color: #fd6a9a;
     width: 100vw;
